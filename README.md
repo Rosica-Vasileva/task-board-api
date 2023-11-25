@@ -26,15 +26,18 @@ TaskBoard exposes a RESTful API for managing tasks and boards. The base URL for 
 - **POST /api/tasks**
   - Create a new task (post a JSON object in the request body, e.g., `{"title":"Add Tests", "description":"API + UI tests", "board":"Open"}`).
 
+  https://taskboardjsv02.softuniqa.repl.co/api/tasks
 - **PATCH /api/tasks/id**
   - Edit a task by id (send a JSON object in the request body, holding the fields to modify, e.g., `{"title":"changed title", "board":"Done"}`).
 
+  https://taskboardjsv02.softuniqa.repl.co/api/tasks/2
 - **DELETE /api/tasks/id**
   - Delete a task by id.
 
 - **GET /api/boards**
   - List all boards.
 
+https://taskboardjsv02.softuniqa.repl.co/api/boards
 ### Example
 
 To list all tasks, make a GET request to [https://taskboardjsv02.softuniqa.repl.co/api/tasks](https://taskboardjsv02.softuniqa.repl.co/api/tasks).
