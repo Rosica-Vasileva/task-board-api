@@ -34,6 +34,7 @@ TaskBoard exposes a RESTful API for managing tasks and boards. The base URL for 
 - **DELETE /api/tasks/id**
   - Delete a task by id.
 
+  https://taskboardjsv02.softuniqa.repl.co/api/tasks/9
 - **GET /api/boards**
   - List all boards.
 
