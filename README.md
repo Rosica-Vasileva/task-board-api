@@ -38,7 +38,7 @@ TaskBoard exposes a RESTful API for managing tasks and boards. The base URL for 
 - **GET /api/boards**
   - List all boards.
 
-https://taskboardjsv02.softuniqa.repl.co/api/boards
+  https://taskboardjsv02.softuniqa.repl.co/api/boards
 ### Example
 
 To list all tasks, make a GET request to [https://taskboardjsv02.softuniqa.repl.co/api/tasks](https://taskboardjsv02.softuniqa.repl.co/api/tasks).
