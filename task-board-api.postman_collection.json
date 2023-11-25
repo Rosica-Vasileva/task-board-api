@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "541d144e-b88f-4ecb-a5ad-ee2f3624bf7c",
+		"name": "task-board-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31084177"
+	},
+	"item": [
+		{
+			"name": "ALL Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://taskboardjsv02.softuniqa.repl.co/api/tasks",
+					"protocol": "https",
+					"host": [
+						"taskboardjsv02",
+						"softuniqa",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ALL API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://taskboardjsv02.softuniqa.repl.co/api",
+					"protocol": "https",
+					"host": [
+						"taskboardjsv02",
+						"softuniqa",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks {id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://taskboardjsv02.softuniqa.repl.co/api/tasks/3",
+					"protocol": "https",
+					"host": [
+						"taskboardjsv02",
+						"softuniqa",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search keyword",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://taskboardjsv02.softuniqa.repl.co/api/tasks/search/tasks",
+					"protocol": "https",
+					"host": [
+						"taskboardjsv02",
+						"softuniqa",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"search",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API boards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://taskboardjsv02.softuniqa.repl.co/api/boards",
+					"protocol": "https",
+					"host": [
+						"taskboardjsv02",
+						"softuniqa",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api",
+						"boards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "boardname",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://taskboardjsv02.softuniqa.repl.co/tasks/board/open",
+					"protocol": "https",
+					"host": [
+						"taskboardjsv02",
+						"softuniqa",
+						"repl",
+						"co"
+					],
+					"path": [
+						"tasks",
+						"board",
+						"open"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new tasks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Add Tests\",\r\n    \"description\": \"API + UI tests\",\r\n    \"board\": \"Open\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://taskboardjsv02.softuniqa.repl.co/api/tasks",
+					"protocol": "https",
+					"host": [
+						"taskboardjsv02",
+						"softuniqa",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "change tasks",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"title\": \"changed title\",\r\n    \"board\": \"Done\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://taskboardjsv02.softuniqa.repl.co/api/tasks/2",
+					"protocol": "https",
+					"host": [
+						"taskboardjsv02",
+						"softuniqa",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks {id} ",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://taskboardjsv02.softuniqa.repl.co/api/tasks/9",
+					"protocol": "https",
+					"host": [
+						"taskboardjsv02",
+						"softuniqa",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
