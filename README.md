@@ -1,28 +1,25 @@
-# ## TaskBoard API
+## TaskBoard API
 
-  TaskBoard exposes a RESTful API for managing tasks and boards. The base URL for the API is [https://taskboardjsv02.softuniqa.repl.co/api](https://taskboardjsv02.softuniqa.repl.co/api) or in your case 
-  `http://{yoursite}/api`.
+TaskBoard exposes a RESTful API for managing tasks and boards. The base URL for the API is [https://taskboardjsv02.softuniqa.repl.co/api](https://taskboardjsv02.softuniqa.repl.co/api) or in your case `http://{yoursite}/api`.
 
 ### Endpoints
 
 - **GET /api**
-
-   - ## List All API Endpoints
-
-To retrieve a list of all available API endpoints, make a GET request to the following URL:
-
-```plaintext
-https://taskboardjsv02.softuniqa.repl.co/api
-
+  - List all API endpoints.
+  
+   https://taskboardjsv02.softuniqa.repl.co/api
 - **GET /api/tasks**
   - List all tasks (returns JSON array of tasks).
 
+   https://taskboardjsv02.softuniqa.repl.co/api/tasks
 - **GET /api/tasks/id**
   - Returns a task by the given id.
 
+  https://taskboardjsv02.softuniqa.repl.co/api/tasks/3
 - **GET /api/tasks/search/keyword**
   - List all tasks matching the given keyword.
 
+  https://taskboardjsv02.softuniqa.repl.co/api/tasks/search/tasks
 - **GET /api/tasks/board/boardName**
   - List tasks by board name.
 
@@ -41,3 +38,7 @@ https://taskboardjsv02.softuniqa.repl.co/api
 ### Example
 
 To list all tasks, make a GET request to [https://taskboardjsv02.softuniqa.repl.co/api/tasks](https://taskboardjsv02.softuniqa.repl.co/api/tasks).
+
+
+
+
